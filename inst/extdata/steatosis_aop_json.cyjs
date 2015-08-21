@@ -1,0 +1,317 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.1.1",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "selected" : true,
+    "__Annotations" : [ "" ],
+    "shared_name" : "Network_1",
+    "SUID" : 377,
+    "name" : "BkF Steatosis"
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "337",
+        "Has_Assay" : "Yes",
+        "selected" : false,
+        "isExcludedFromPaths" : false,
+        "SUID" : 337,
+        "name" : "NFE2L2/Nrf2",
+        "AID" : [ 743202, 743219, 720636, 651741 ],
+        "MIE" : "",
+        "shared_name" : "Node 21"
+      }
+    }, {
+      "data" : {
+        "id" : "397",
+        "Has_Assay" : "Yes",
+        "selected" : false,
+        "isExcludedFromPaths" : false,
+        "SUID" : 397,
+        "name" : "FXR",
+        "MIE" : "",
+        "shared_name" : "Node 30"
+      }
+    }, {
+      "data" : {
+        "id" : "396",
+        "Has_Assay" : "",
+        "selected" : false,
+        "isExcludedFromPaths" : false,
+        "SUID" : 396,
+        "name" : "MIE1",
+        "MIE" : "Yes",
+        "shared_name" : "Node 31"
+      }
+    }, {
+      "data" : {
+        "id" : "395",
+        "Has_Assay" : "",
+        "selected" : false,
+        "isExcludedFromPaths" : false,
+        "SUID" : 395,
+        "name" : "SHP",
+        "MIE" : "",
+        "shared_name" : "Node 32"
+      }
+    }, {
+      "data" : {
+        "id" : "394",
+        "Has_Assay" : "Yes",
+        "selected" : false,
+        "isExcludedFromPaths" : false,
+        "SUID" : 394,
+        "name" : "PPAR-alpha",
+        "MIE" : "",
+        "shared_name" : "Node 33"
+      }
+    }, {
+      "data" : {
+        "id" : "393",
+        "Has_Assay" : "",
+        "selected" : false,
+        "isExcludedFromPaths" : false,
+        "SUID" : 393,
+        "name" : "LXR-alpha",
+        "MIE" : "",
+        "shared_name" : "Node 34"
+      }
+    }, {
+      "data" : {
+        "id" : "392",
+        "Has_Assay" : "",
+        "selected" : false,
+        "isExcludedFromPaths" : false,
+        "SUID" : 392,
+        "name" : "Lipogenesis",
+        "MIE" : "",
+        "shared_name" : "Node 35"
+      }
+    }, {
+      "data" : {
+        "id" : "391",
+        "Has_Assay" : "Yes",
+        "selected" : false,
+        "isExcludedFromPaths" : false,
+        "SUID" : 391,
+        "name" : "DHB4",
+        "MIE" : "",
+        "shared_name" : "Node 36"
+      }
+    }, {
+      "data" : {
+        "id" : "390",
+        "Has_Assay" : "",
+        "selected" : false,
+        "isExcludedFromPaths" : false,
+        "SUID" : 390,
+        "name" : "MIE2",
+        "MIE" : "Yes",
+        "shared_name" : "Node 31"
+      }
+    }, {
+      "data" : {
+        "id" : "389",
+        "Has_Assay" : "",
+        "selected" : false,
+        "isExcludedFromPaths" : false,
+        "SUID" : 389,
+        "name" : "Fatty Acid Beta-Oxidation",
+        "MIE" : "",
+        "shared_name" : "Node 37"
+      }
+    }, {
+      "data" : {
+        "id" : "388",
+        "Has_Assay" : "",
+        "selected" : false,
+        "isExcludedFromPaths" : false,
+        "SUID" : 388,
+        "name" : "Steatosis",
+        "MIE" : "",
+        "shared_name" : "Node 38"
+      }
+    }, {
+      "data" : {
+        "id" : "387",
+        "Has_Assay" : "",
+        "selected" : false,
+        "isExcludedFromPaths" : false,
+        "SUID" : 387,
+        "name" : "Steatohepatitis",
+        "MIE" : "",
+        "shared_name" : "Node 39"
+      }
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "411",
+        "source" : "337",
+        "target" : "397",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 21 (interaction) Node 30",
+        "SUID" : 411,
+        "name" : "Node 21 (interaction) Node 30"
+      }
+    }, {
+      "data" : {
+        "id" : "410",
+        "source" : "397",
+        "target" : "395",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 30 (interaction) Node 32",
+        "SUID" : 410,
+        "name" : "Node 30 (interaction) Node 32"
+      }
+    }, {
+      "data" : {
+        "id" : "409",
+        "source" : "397",
+        "target" : "394",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 30 (interaction) Node 33",
+        "SUID" : 409,
+        "name" : "Node 30 (interaction) Node 33"
+      }
+    }, {
+      "data" : {
+        "id" : "408",
+        "source" : "396",
+        "target" : "337",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 31 (interaction) Node 21",
+        "SUID" : 408,
+        "name" : "Node 31 (interaction) Node 21"
+      }
+    }, {
+      "data" : {
+        "id" : "407",
+        "source" : "396",
+        "target" : "397",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 31 (interaction) Node 30",
+        "SUID" : 407,
+        "name" : "Node 31 (interaction) Node 30"
+      }
+    }, {
+      "data" : {
+        "id" : "406",
+        "source" : "395",
+        "target" : "393",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 32 (interaction) Node 34",
+        "SUID" : 406,
+        "name" : "Node 32 (interaction) Node 34"
+      }
+    }, {
+      "data" : {
+        "id" : "405",
+        "source" : "395",
+        "target" : "394",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 32 (interaction) Node 33",
+        "SUID" : 405,
+        "name" : "Node 32 (interaction) Node 33"
+      }
+    }, {
+      "data" : {
+        "id" : "404",
+        "source" : "394",
+        "target" : "391",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 33 (interaction) Node 36",
+        "SUID" : 404,
+        "name" : "Node 33 (interaction) Node 36"
+      }
+    }, {
+      "data" : {
+        "id" : "403",
+        "source" : "393",
+        "target" : "392",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 34 (interaction) Node 35",
+        "SUID" : 403,
+        "name" : "Node 34 (interaction) Node 35"
+      }
+    }, {
+      "data" : {
+        "id" : "402",
+        "source" : "392",
+        "target" : "388",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 35 (interaction) Node 38",
+        "SUID" : 402,
+        "name" : "Node 35 (interaction) Node 38"
+      }
+    }, {
+      "data" : {
+        "id" : "401",
+        "source" : "391",
+        "target" : "389",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 36 (interaction) Node 37",
+        "SUID" : 401,
+        "name" : "Node 36 (interaction) Node 37"
+      }
+    }, {
+      "data" : {
+        "id" : "400",
+        "source" : "390",
+        "target" : "391",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 31 (interaction) Node 36",
+        "SUID" : 400,
+        "name" : "Node 31 (interaction) Node 36"
+      }
+    }, {
+      "data" : {
+        "id" : "399",
+        "source" : "389",
+        "target" : "388",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 37 (interaction) Node 38",
+        "SUID" : 399,
+        "name" : "Node 37 (interaction) Node 38"
+      }
+    }, {
+      "data" : {
+        "id" : "398",
+        "source" : "388",
+        "target" : "387",
+        "selected" : false,
+        "interaction" : "interaction",
+        "shared_interaction" : "interaction",
+        "shared_name" : "Node 38 (interaction) Node 39",
+        "SUID" : 398,
+        "name" : "Node 38 (interaction) Node 39"
+      }
+    } ]
+  }
+}
