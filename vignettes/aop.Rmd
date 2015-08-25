@@ -8,7 +8,7 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
 ---
 
-This vignette describes how to use the _aop_ package. The _aop_ package is a Bioconductor package that is intended to facilitate the analysis of adverse outcome pathways (AOPs). With this first release, the _aop_ package contains code that will allow users to use graph theory to identify those nodes in an AOP that must be measured to make a causal statement. Future releases will include code that will make it easier to use graph theory to computationally predict AOPs.
+This vignette describes how to use the _aop_ package. The _aop_ package is intended to facilitate the analysis of adverse outcome pathways (AOPs). With this first release, the _aop_ package contains code that will allow users to use graph theory to identify those nodes in an AOP that must be measured to make a causal statement. Future releases will include code that will make it easier to use graph theory to computationally predict AOPs.
 
 ## Background
 

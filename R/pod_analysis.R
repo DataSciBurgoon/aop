@@ -417,7 +417,7 @@ pod_envelope_analysis <- function(bmr_obj, slope_data, slope_threshold = 1.0, lo
 #' 
 #' A dataset containing the concentration-response data for analyzing the
 #' estrogenicity of oxybenzone from PubChem (Assay ID: 743075, Substance ID: 
-#' 144209183, Chemical ID: 4632; Assay ID: 743079, Assay ID: 144203969
+#' 144209183, Chemical ID: 4632; Assay ID: 743079, Substance ID: 144203969
 #' Chemical ID: 4632). 125 rows. 58 rows x 4 cols/variables.
 #' 
 #' AssayDataset DatasetReplicate Concentration  Activity

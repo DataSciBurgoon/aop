@@ -1,17 +1,17 @@
 Package: aop
 Type: Package
 Title: Adverse Outcome Pathway Analysis
-Version: 0.99.5
-Date: 2015-04-13
+Version: 1.00.0
+Date: 2015-08-25
 Author: Lyle D. Burgoon <burgoon.lyle@gmail.com>
 Maintainer: Lyle D. Burgoon <burgoon.lyle@gmail.com>
 Description: This package provides tools for analyzing adverse outcome pathways
     (AOPs) for pharmacological and toxicological research. Functionality
     includes the ability to perform causal network analysis of networks
-    developed in and exported from Cytoscape or existing as R graph objects,
-    as well the ability the that are either 1) developed in and exported from
-    Cytoscape or 2) already exist in R as a graph object.
-License: CC0
+    developed in and exported from Cytoscape or existing as R graph objects, and
+    identifying the point of departure/screening/risk value from concentration-
+    response data.
+License: file LICENSE
 Suggests:
     RUnit,
     knitr,
@@ -34,4 +34,3 @@ Collate:
     'aop_graph_analysis.R'
     'bmr_Class.R'
     'pod_analysis.R'
-Packaged: 2015-04-17 13:16:57 UTC; Lyle
