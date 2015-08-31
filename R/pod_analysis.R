@@ -26,6 +26,11 @@ utils::globalVariables(c("concentration", "lower_bound", "upper_bound",
 #' bmr_obj <- bootstrap_metaregression(oxybenzone, 15, 100)
 #' 
 #' @import splines
+#' @importFrom stats lm
+#' @importFrom stats median
+#' @importFrom stats na.omit
+#' @importFrom stats predict
+#' @importFrom stats quantile
 #' 
 #' @export
 bootstrap_metaregression <- function(x, dataset_size, iterations=1000){

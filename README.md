@@ -16,8 +16,9 @@ For examples, please see the package documentation.
 
 #Installation
 ```R
-#from CRAN
-install.packages("aop")
+#from github
+library(devtools)
+install_github("DataSciBurgoon/aop")
 ```
 
 #Overview

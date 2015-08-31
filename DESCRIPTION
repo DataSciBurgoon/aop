@@ -1,11 +1,11 @@
 Package: aop
 Type: Package
 Title: Adverse Outcome Pathway Analysis
-Version: 1.00.0
+Version: 1.0.0
 Date: 2015-08-25
-Author: Lyle D. Burgoon <burgoon.lyle@gmail.com>
-Maintainer: Lyle D. Burgoon <burgoon.lyle@gmail.com>
-Description: This package provides tools for analyzing adverse outcome pathways
+Author: Lyle D. Burgoon <Lyle.D.Burgoon@usace.army.mil>
+Maintainer: Lyle D. Burgoon <Lyle.D.Burgoon@usace.army.mil>
+Description: Provides tools for analyzing adverse outcome pathways
     (AOPs) for pharmacological and toxicological research. Functionality
     includes the ability to perform causal network analysis of networks
     developed in and exported from Cytoscape or existing as R graph objects, and
