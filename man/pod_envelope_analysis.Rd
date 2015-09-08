@@ -5,7 +5,8 @@
 \title{This function calculates the chemical's point of departure.}
 \usage{
 pod_envelope_analysis(bmr_obj, slope_data, slope_threshold = 1,
-  lower_interpolation_range, upper_interpolation_range, interval_size)
+  lower_interpolation_range, upper_interpolation_range, interval_size,
+  agonist_assay = TRUE)
 }
 \arguments{
 \item{bmr_obj}{a \code{bmr} object that holds all of the bootstrap
@@ -29,6 +30,9 @@ interpolation should be bounded on the upper end.}
 \item{interval_size}{a \code{numeric} value that specifies how large the
 interval should be between each value used for interpolation between
 the lower and upper bounds.}
+
+\item{agonist_assay}{a \code{boolean} value that specifies if the assay
+is an agonist or antagonist assay.}
 }
 \value{
 a two column \code{data.frame} that contains the chemical's point
