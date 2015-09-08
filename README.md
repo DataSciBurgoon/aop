@@ -18,7 +18,7 @@ For examples, please see the package documentation.
 ```R
 #from github
 library(devtools)
-install_github("DataSciBurgoon/aop")
+install_github("DataSciBurgoon/aop", build_vignettes=TRUE)
 ```
 
 #Overview
