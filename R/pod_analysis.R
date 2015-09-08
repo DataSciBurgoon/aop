@@ -381,6 +381,9 @@ internal_model_fits <- function(bmr_model, interval){
 #' interval should be between each value used for interpolation between
 #' the lower and upper bounds.
 #' 
+#' @param agonist_assay a \code{boolean} value that specifies if the assay
+#' is an agonist or antagonist assay.
+#' 
 #' @return a two column \code{data.frame} that contains the chemical's point
 #' of departure and the threshold value.
 #' 
@@ -395,24 +398,44 @@ internal_model_fits <- function(bmr_model, interval){
 #' @importFrom plyr ldply
 #' 
 #' @export
-pod_envelope_analysis <- function(bmr_obj, slope_data, slope_threshold = 1.0, lower_interpolation_range, upper_interpolation_range, interval_size){
+pod_envelope_analysis <- function(bmr_obj, slope_data, slope_threshold = 1.0, lower_interpolation_range, upper_interpolation_range, interval_size, agonist_assay=TRUE){
   pod <- pod_slope_analysis(slope_data, slope_threshold)
   confidence_envelope <- bmr_obj@confidence_envelope[which(bmr_obj@confidence_envelope$concentration < pod),]
-  mean_upper_bound <- mean(confidence_envelope$upper_bound)
-  interval <- seq(from = lower_interpolation_range, to = upper_interpolation_range, by=interval_size)
-  model_fit_aggregates <- NULL
-  median_activity <- NULL
-  
-  model_fit_aggregates <- ldply(bmr_obj@models, internal_model_fits, interval)
-  
-  for(i in unique(model_fit_aggregates$concentration)){
-    temp_df_sub <- model_fit_aggregates[which(model_fit_aggregates$concentration == i), ]
-    median_activity <- rbind(median_activity, data.frame(concentration = i, median_activity = median(temp_df_sub$activity)))
+  if(agonist_assay){
+    mean_upper_bound <- mean(confidence_envelope$upper_bound)
+    interval <- seq(from = lower_interpolation_range, to = upper_interpolation_range, by=interval_size)
+    model_fit_aggregates <- NULL
+    median_activity <- NULL
+    
+    model_fit_aggregates <- ldply(bmr_obj@models, internal_model_fits, interval)
+    
+    for(i in unique(model_fit_aggregates$concentration)){
+      temp_df_sub <- model_fit_aggregates[which(model_fit_aggregates$concentration == i), ]
+      median_activity <- rbind(median_activity, data.frame(concentration = i, median_activity = median(temp_df_sub$activity)))
+    }
+    #Diagnostic to print the upper bound that needs to intersect with the median line to identify the POD
+    #print(mean_upper_bound)
+    #print(median_activity[which(median_activity$median_activity < mean_upper_bound),])
+    return(data.frame(pod = median_activity[max(which(median_activity$median_activity < mean_upper_bound)),1], threshold = mean_upper_bound))
   }
-  #Diagnostic to print the upper bound that needs to intersect with the median line to identify the POD
-  #print(mean_upper_bound)
-  #print(median_activity[which(median_activity$median_activity < mean_upper_bound),])
-  return(data.frame(pod = median_activity[max(which(median_activity$median_activity < mean_upper_bound)),1], threshold = mean_upper_bound))
+  else{
+    mean_lower_bound <- mean(confidence_envelope$lower_bound)
+    interval <- seq(from = lower_interpolation_range, to = upper_interpolation_range, by=interval_size)
+    model_fit_aggregates <- NULL
+    median_activity <- NULL
+    
+    model_fit_aggregates <- ldply(bmr_obj@models, internal_model_fits, interval)
+    
+    for(i in unique(model_fit_aggregates$concentration)){
+      temp_df_sub <- model_fit_aggregates[which(model_fit_aggregates$concentration == i), ]
+      median_activity <- rbind(median_activity, data.frame(concentration = i, median_activity = median(temp_df_sub$activity)))
+    }
+    #Diagnostic to print the upper bound that needs to intersect with the median line to identify the POD
+    #print(mean_upper_bound)
+    #print(median_activity[which(median_activity$median_activity < mean_upper_bound),])
+    return(data.frame(pod = median_activity[max(which(median_activity$median_activity < mean_lower_bound)),1], threshold = mean_lower_bound))
+  }
+  
 }
 
 #---------------------------------------------------------------------
