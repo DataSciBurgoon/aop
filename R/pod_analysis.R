@@ -433,7 +433,7 @@ pod_envelope_analysis <- function(bmr_obj, slope_data, slope_threshold = 1.0, lo
     #Diagnostic to print the upper bound that needs to intersect with the median line to identify the POD
     #print(mean_upper_bound)
     #print(median_activity[which(median_activity$median_activity < mean_upper_bound),])
-    return(data.frame(pod = median_activity[max(which(median_activity$median_activity < mean_lower_bound)),1], threshold = mean_lower_bound))
+    return(data.frame(pod = median_activity[min(which(median_activity$median_activity < mean_lower_bound)),1], threshold = mean_lower_bound))
   }
   
 }
