@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/18586/DataSciBurgoon/aop.svg)](https://zenodo.org/badge/latestdoi/18586/DataSciBurgoon/aop)
+
 #Purpose
 The overall goal of the *aop* package is to provide a single package to facilitate
 the use of Adverse Outcome Pathways for chemical risk assessment, hazard
